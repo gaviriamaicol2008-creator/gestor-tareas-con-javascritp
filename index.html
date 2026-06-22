@@ -8,46 +8,47 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    
     <div class="contenedor">
-        <h1 class="titulo1">gestor de actividades academicas</h1>
+        <h1>Gestor de Actividades Académicas</h1>
 
-        <p class="descripción">
+        <p class="descripcion">
             Agrega las actividades pendientes, márcalas como realizadas o elimínalas.
         </p>
 
 
         <div class="formulario">
-            <input type="text" id="actividad-input" placeholder="Ejemplo: Entregar taller JavaScript">
-            <button id="btnAgregar">Agregar</button>
+            <input type="text" id="actividadInput" placeholder="Ejemplo: Entregar taller de JavaScript">
+            <button id="btnAgregar" >Agregar</button>
         </div>
 
         <p id="mensajeError" class="mensaje-error"></p>
 
-        <did class="resumen">
-           <p>Total: <span id="TotalActividades">0</span></p>
-           <p>realizadas: <span id="TotalActividadesRealizadas">0</span></p>
-           <p>pendientes: <span id="TotalActividadesPendientes">0</span></p>
-           
 
-        </did>
-        <h2>Lista de actividades</h2>
-        <ul id="listaActividades"></ul>
-        <p id="mensajeVacio" class="vacia">No hay actividades registradas.</p>
-        
+        <div class="resumen">
+            <p>Total: <span id="totalActividades"> 0 </span></p>
+            <p>realizadas: <span id="totalActividadesRealizadas">0</span></p>
+            <p>Pendientes: <span id="totalActividadesPendientes">0</span></p>
+        </div>
+
+       <h2>Lista de actividades</h2> 
+
+       <p id="mensajeVacio" class="vacia">No hay actividades registradas.</p>
+
+       <ul id="listaActividades"></ul>
+
     </div>
-
 
 
     <footer class="footer">
         <p>
-            &copy; 2026 <span>gestor de tareas.</span> Todos los derechos reservados.
+           &copy; 2026 <span id="year"> </span><span>Gestor de Tareas.</span> Todos los derechos reservados.
         </p>
         <p class="footer-text">
             Desarrollado por Maicol msc.
-
         </p>
     </footer>
-        <script src="js/script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
